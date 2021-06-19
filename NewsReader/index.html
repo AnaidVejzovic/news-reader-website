@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsReader Test 1</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body" onload="allFeed()">
+    <span class="openbtn" onclick="openNav()"><!--&#9776;-->&#9654;</span>
+    <div class="menu" id="menu">
+      <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+      <button id="dark" onclick="darkMode()"><b><!--&#9790;--></b><img src="images/darkmode.png" width="16" height="16"></button>
+      <button id="closebtn" onclick="closeNav()"><b>&times;</b></button>
+      <h4>Svijet</h4>
+      <img src="ico/cnbc.ico" width="14" height="14">
+      <input type="checkbox" id="cnbc" name="cnbc" value="on" />
+      <label for="cnbc"> CNBC</label><br />
+      <img src="ico/nyt.ico" width="14" height="14">
+      <input type="checkbox" id="nyt" name="nyt" value="on" />
+      <label for="nyt">NYTimes</label><br />
+
+      <img src="ico/yahoo.ico" width="14" height="14">
+      <input type="checkbox" id="yahoo" name="yahoo" value="on" />
+      <label for="yahoo">Yahoo!</label><br />
+
+      <h4>Regija</h4>
+      <img src="ico/klix.ico" width="14" height="14">
+      <input type="checkbox" id="klix" name="klix" value="on" />
+      <label for="klix"> Klix</label><br />
+      <img src="ico/tuzlanski.ico" width="14" height="14">
+      <input type="checkbox" id="tuzlanski" name="tuzlanski" value="on" />
+      <label for="tuzlanski">Tuzlanski.ba</label><br />
+      <img src="ico/osloKat1.ico" width="14" height="14">
+      <input type="checkbox" id="osloKat1" name="osloKat1" value="on" />
+      <label for="osloKat1">Oslobođenje Vijesti</label><br />
+
+      <h4>Sport</h4>
+      <img src="ico/osloKat2.ico" width="14" height="14">
+      <input type="checkbox" id="osloKat2" name="osloKat2" value="on" />
+      <label for="osloKat2">Oslobođenje Sport</label><br />
+
+      <img src="ico/nytSport.ico" width="14" height="14">
+      <input type="checkbox" id="nytSport" name="nytSport" value="on" />
+      <label for="nytSport">NYTimes Sport</label><br />
+
+      <img src="ico/yahooSport.ico" width="14" height="14">
+      <input type="checkbox" id="yahooSport" name="<yahooSport>" value="on" />
+      <label for="yahooSport">Yahoo! Sport</label><br />
+
+      <h4>Business</h4>
+      <img src="ico/cnbcBiz.ico" width="14" height="14">
+      <input type="checkbox" id="cnbcBiz" name="cnbcBiz" value="on" />
+      <label for="cnbcBiz"> CNBC Business</label><br />
+
+      <img src="ico/nytBiz.ico" width="14" height="14">
+      <input type="checkbox" id="nytBiz" name="nytBiz" value="on" />
+      <label for="nytBiz">NYTimes Business</label><br />
+
+      <img src="ico/yahooBiz.ico" width="14" height="14">
+      <input type="checkbox" id="yahooBiz" name="yahooBiz" value="on" />
+      <label for="yahooBiz">Yahoo! Business</label><br />
+
+      <br>
+      <p><center><b>Broj vijesti po izvoru</b></center></p>
+      <input type="number" id="brojVijesti" name="brojVijesti" min="1" max="30" value="30">
+      <button id="feed" onclick="saveAndFeed()"><b>SAVE & FEED</b></button>
+    </div>
+  </body>
+</html>

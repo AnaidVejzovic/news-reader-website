@@ -1,0 +1,352 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #FFFFFF;
+  margin-left: 15px; 
+}
+body.dark {
+  color: white;
+  background: rgb(100, 100, 100);
+}
+/*
+.menu {
+  width: fit-content;
+  padding: 5px;
+  outline: 1px solid;
+}*/
+.menu button {
+  border: none;
+  background-color: #F1B24A;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.menu button:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
+.menu #dark{
+  display: inline;
+  width: 50%;
+  /*
+  font-size: 18pt;
+  padding: 3px 0px;*/
+  
+}
+.menu #dark:hover {
+  background-color: black;
+  outline: solid 2px white;
+}
+.menu #feed:hover {
+  background-color: #9DC88D;
+  color:black;
+}
+.menu #closebtn{
+  background-color: rgb(255, 129, 129);
+  width: 50%;
+  display: inline;
+  font-size: 20px;
+  padding: 8px 6px;
+}
+.menu #closebtn:hover{
+  background-color: red;
+}
+
+h3 {
+  background-color: white;
+  text-align: left;
+  padding: 5px 5px 5px 25px;
+  margin-left: 25px;
+  /*width: fit-content;*/
+  width: 93%;
+}
+
+
+h2 {
+  
+  padding: 5px 5px 5px 5px;
+  margin-left: 25px;
+  width: fit-content;
+}
+
+/*Article umjesto h3*/
+article{
+  background-color: white;
+  text-align: left;
+  padding: 5px 5px 5px 5px;
+  margin-left: 1.5%;
+  margin-bottom: 15px;
+  width: 94.3%;
+  height: fit-content;
+}
+article a{
+  font-weight: bold;
+  text-shadow: 2px 1px rgb(230, 230, 230);
+  text-decoration: none;
+  text-align: justify;
+  /*padding: 14px 25px;*/
+  display: inline-block;
+  color: black;
+  /*padding-bottom: 3px;*/
+  padding: 5px;
+  width: fit-content;
+  height: fit-content;
+  /*
+  width: 100%;
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;*/
+}
+article a:hover, a:active {
+  background-color: #ffbc4f;
+  /*background-image:linear-gradient(to bottom right,#F1B24A,#f0b75d);*/
+  color: white;
+  text-shadow: none;
+  /*outline: 2px solid;*/
+}
+.dark article a:hover, a:active {
+  background-color: #F1B24A;
+}
+/*
+article img {
+  padding-right: 20px;
+  vertical-align: middle;
+}*/
+#icon{
+  padding-right: 25px;
+
+}
+article p{
+  font-size: 8pt;
+  color: rgba(0, 0, 0, 0.603);
+  margin:5px;
+  /*margin-left: 65px;*/
+  text-shadow: none;
+}
+
+article.dark{
+  /*
+  background: rgb(49, 49, 49);
+  */
+  /*
+  background-image: linear-gradient(to bottom right, #4D774E, #9DC88D);
+  */
+  background-image: linear-gradient(to bottom right, #164A41,#4D774E);
+}
+/*
+article a.dark{
+  color:white;
+  text-shadow: none;
+}*/
+
+/* Nemam pojma zašto ovo radi ovako, bez da uopšte unesem išta u darkmode funkciju u javascriptu*/
+.dark article a{
+  color:white;
+  text-shadow: none;
+}
+
+article p.dark{
+  color:rgba(255, 255, 255, 0.562);
+}
+
+#feeds {
+  background-image: linear-gradient(to bottom right, #9DC88D ,#e7ffdf);
+  color: white;
+  text-shadow: 1px 1px rgb(88, 88, 88);
+  /*padding: 5px;*/
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  display:inline-block;
+  
+  /*
+  width: 30%;
+  height: 30%;*/
+
+  /*margin:5px;
+  padding:5px;*/
+  /*Small screen
+  width:420px;*/
+  width: 31%;
+  height: 350px;
+  overflow: auto;
+  text-align:justify;
+  outline: #4D774E 2px solid;
+}
+
+/* Ista stvar kao i kod "article a" - iz nekog razloga radi ovako bez da se togglea klasa dark u funkciji */
+.dark #feeds{
+  /*
+  background-image: linear-gradient(to bottom right, #4D774E, #9DC88D);
+  */
+  background: rgb(49, 49, 49);
+  outline: #164A41 2px solid;
+}
+
+.heading{
+  font-size:16pt;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  /* Small screen fix
+  padding-right: 41px;
+  width: 373px;
+  */
+  background-color: #4D774E;
+  /*display:inline-flexbox;*/
+  /*width:30.2%;*/
+  
+  width: auto;
+  position: absolute;
+}
+
+.heading img{
+  padding-left: 10px;
+  padding-right: 0;
+
+  
+  margin: 0;
+}
+
+.dark .heading{
+  background-color: #164A41;
+}
+
+
+#brojVijesti{
+  width: 90%;
+  padding: 10px 10px;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.menu {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 0px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #164A41;
+  color: white;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding:0px;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+
+
+.openbtn{
+  position:relative;
+  font-size:15px;
+  cursor:pointer;
+  background-color:#4D774E;
+  color:white;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left:0;
+  padding-right: 2px;
+  height: 100%;
+  line-height: 100vh;
+}
+
+.dark .openbtn{
+  background-color: #164A41;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4D774E; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffbc4f; 
+}
+
+
+.dark ::-webkit-scrollbar-track {
+  background: rgb(180, 179, 179); 
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background:#164A41; 
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #F1B24A; 
+}
+
+@media only screen and (max-width: 1095px){
+  #feeds{
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 950px){
+  #feeds{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 300px){
+  .heading{
+    font-size: 0;
+  }
+  body{
+    font-size: small;
+  }
+  article p{
+    font-size: 0;
+  }
+}
+
+
+
+
+/*
+Dark Green: #164A41
+
+Medium Green: #4D774E
+
+Light Green: #9DC88D
+
+Natural Yellow: #F1B24A
+
+White: #FFFFFF
+*/
+
+
+/*
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+*/
